@@ -340,7 +340,7 @@ bot.command("top", (ctx) => {
 			if (top.length > 0) {
 				ctx.replyWithMarkdown(Degisken(`
 *✅ Qrupun ən yaxşı 20 oyunçusu:*
-
+*🎉 iʏᴜʟ ᴀʏıɴıɴ ǫᴀʟiʙʟəʀi:*
 ${top.sort((a, b) => b.score - a.score).slice(0, 20).map((member, index) => `${["","",""][index] || ""} ${index + 1}) *${member.firstName}*: ${member.score} ${HusnuEhedov(member.score, "puan🎁", "puan🎁", "puan🎁")}`).join("\n")}
 				`))
 			}
