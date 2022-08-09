@@ -75,7 +75,7 @@ const OyunYaratHusnuEhedov = chatId => {
 }
 const ozelMesaj = isGroup => Degisken(`
 *👋Salam! Mən, vaxtıvızı əyləncəli hala gətirmək üçün təxmin üzərinə qurulu bir oyun botuyam 🔍🤖\n\n\n\n\n\n\n\n*
-    ${isGroup ? "" : "\n*Əsas əmrlərin siyahısı üçün /help*"}
+ ${isGroup ? "":"\n*Əsas əmrlərin siyahısı üçün /help*"}
 `)
 const YasOyunBaslat = () => {  // OYUN RESİM ALMASI GEREK DOSYA KONUM 
 	let imagePath = "./resimler"
@@ -173,7 +173,7 @@ const RaundMesajHusnuEhedov = (chatId, round, time) => {
 ⚡Yay Sezonu Qalibi Sən ol ⚡
 1 - Ci Yer 15 Azn 💸
 2 - Ci Yer 10 Azn 💸
-3 Cü - Yer 5 Azn 💸
+3 - Cü Yer 5 Azn 💸
 		${answers.length > 0 ? 
 			`\n${answers.map((member, index) => `${index + 1}. *${member.firstName}*: ${member.answer}`).join("\n")}\n`
 			:
